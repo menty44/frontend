@@ -1,6 +1,4 @@
-import Link from "next/link";
-
-export default function HomePage() {
+export default function LoginPage() {
     return (
 
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8 my-page">
@@ -31,12 +29,12 @@ export default function HomePage() {
 
 
                 <div>
-                    <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 
-                        <h2 style={{ fontFamily: 'Ubuntu, sans-serif' }} className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-                            Sign In
-                        </h2>
-                    </div>
+                    <h2 style={{ fontFamily: 'Ubuntu, sans-serif' }} className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
+                        Login
+                    </h2>
+                </div>
 
                     <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
                         <form className="space-y-6" action="#" method="POST">
@@ -120,9 +118,9 @@ export default function HomePage() {
 
                         <p className="mt-10 text-center text-sm text-white">
                             Already have an account?{' '}
-                            <Link href="/login" className="font-semibold leading-6 text-sky-300 hover:text-sky-200">
+                            <a href="#" className="font-semibold leading-6 text-sky-300 hover:text-sky-200">
                                 signin
-                            </Link>
+                            </a>
                         </p>
                     </div>
                 </div>
