@@ -34,7 +34,7 @@ export default function HomePage() {
                     <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 
                         <h2 style={{ fontFamily: 'Ubuntu, sans-serif' }} className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-                            Sign In
+                            Register
                         </h2>
                     </div>
 
@@ -50,7 +50,7 @@ export default function HomePage() {
                                         name="username"
                                         type="text"
                                         required
-                                        className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                                        className=" w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -65,7 +65,7 @@ export default function HomePage() {
                                         name="email"
                                         type="email"
                                         required
-                                        className="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                                        className="w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
                                         name="password"
                                         type="password"
                                         required
-                                        className=" w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                                        className=" w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -103,7 +103,7 @@ export default function HomePage() {
                                         name="confirmpassword"
                                         type="password"
                                         required
-                                        className="rounded-full w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
+                                        className="rounded-full w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-sky-600 sm:text-sm sm:leading-6"
                                     />
                                 </div>
                             </div>
@@ -111,9 +111,9 @@ export default function HomePage() {
                             <div>
                                 <button
                                     type="submit"
-                                    className="rounded-full flex w-full justify-center rounded-md bg-sky-300 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
+                                    className="rounded-full flex w-full justify-center bg-sky-300 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                                 >
-                                    Sign in
+                                    Register
                                 </button>
                             </div>
                         </form>
