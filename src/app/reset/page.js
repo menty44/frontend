@@ -69,7 +69,7 @@ export default function LoginPage() {
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
 
                     <h2 style={{ fontFamily: 'Ubuntu, sans-serif' }} className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-white">
-                        Login
+                        Reset Password
                     </h2>
                 </div>
 
@@ -130,8 +130,8 @@ export default function LoginPage() {
                         </form>
 
                         <p className="mt-10 text-center text-sm text-white">
-
-                            <Link href="/reset" className="font-semibold leading-6 text-sky-300 hover:text-sky-200">
+                            
+                            <Link href="/" className="font-semibold leading-6 text-sky-300 hover:text-sky-200">
                                 Forgot password?
                             </Link>
                         </p>
