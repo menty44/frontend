@@ -15,11 +15,11 @@ export default function LoginPage() {
         e.preventDefault();
 
         const data = {
-            username: username,
+            email: username,
             password: password,
         };
 
-        axios.post('http://172.104.158.134:8081/api/auth/signin', data)
+        axios.post('http://172.104.158.134:8081/api/v1/auth/authenticate', data)
             .then(function (response) {
 
                 console.log(response.data);

@@ -15,11 +15,11 @@ export default function LoginPage() {
         e.preventDefault();
 
         const data = {
-            username: username,
+            email: username,
             password: password,
         };
 
-        axios.post('http://172.104.158.134:8081/api/auth/signin', data)
+        axios.post('http://172.104.158.134:8081/api/v1/auth/reset-password', data)
             .then(function (response) {
 
                 console.log(response.data);
@@ -77,7 +77,7 @@ export default function LoginPage() {
                         <form onSubmit={handleSubmit} className="space-y-6" action="#" method="POST">
                             <div>
                                 <label htmlFor="username" className="block text-sm font-medium leading-6 text-white">
-                                    UserName
+                                    Email
                                 </label>
                                 <div className="mt-2">
                                     <input
@@ -98,7 +98,7 @@ export default function LoginPage() {
                                 <div className="flex items-center justify-between">
                                     <label htmlFor="password"
                                            className="rounded-full text-sm font-medium leading-6 text-white">
-                                        Password
+                                        New Password
                                     </label>
 
                                 </div>
@@ -123,7 +123,7 @@ export default function LoginPage() {
                                     type="submit"
                                     className="rounded-full flex w-full justify-center bg-sky-300 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
                                 >
-                                    Sign in
+                                    Reset
                                 </button>
 
                             </div>
