@@ -34,7 +34,7 @@ export const authOptions: NextAuthOptions = {
         const user = await res.json();
 
         if (user?.code == 200 && user) {
-          return user.data;
+          return { ...user.data, email };
         } else {
           throw new Error(user?.data);
         }
