@@ -19,7 +19,7 @@ export default function RootLayout({
     <div className={`${inter.className} h-full`}>
       <Image objectFit="cover" className="fixed h-full" src={signUpBg} alt="" />
       <div className="flex justify-center">
-        <div className=" relative inset-0 z-0 flex w-full justify-between h-auto border-none  bg-gray-700 bg-opacity-20 bg-clip-padding py-12 backdrop-blur-lg backdrop-filter md:w-[90%] min-h-screen  lg:pt-0 lg:backdrop-blur-2xl">
+        <div className="relative inset-0 z-0 flex justify-between w-full h-auto min-h-screen py-12 bg-gray-700 border-none  bg-opacity-20 bg-clip-padding backdrop-blur-lg backdrop-filter lg:pt-0 lg:backdrop-blur-2xl">
           {children}
         </div>
       </div>

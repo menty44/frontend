@@ -71,7 +71,7 @@ const UserSignUpAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
 
     try {
       await axios
-        .post(`${process.env.AUTH_URL}/v1/auth/register`, user)
+        .post(`${process.env.BACKEND_API_SERVICE}/v1/auth/register`, user)
         .then(() => {
           reset();
           setIsLoading(false);

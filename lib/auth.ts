@@ -21,7 +21,7 @@ export const authOptions: NextAuthOptions = {
           password: string;
         };
         const res = await fetch(
-          `${process.env.AUTH_URL}/v1/auth/authenticate`,
+          `${process.env.BACKEND_API_SERVICE}/v1/auth/authenticate`,
           {
             method: 'POST',
             headers: {
@@ -32,10 +32,9 @@ export const authOptions: NextAuthOptions = {
         );
 
         const user = await res.json();
-        console.log('res user', user);
 
         if (user?.code == 200 && user) {
-          return user;
+          return user.data;
         } else {
           throw new Error(user?.data);
         }
@@ -46,13 +45,15 @@ export const authOptions: NextAuthOptions = {
   callbacks: {
     jwt: async ({ token, user }) => {
       if (user) token = user as unknown as { [key: string]: any };
-      console.log(token);
-
       return token;
     },
     session: async ({ session, token }) => {
       session.user = { ...token };
       return session;
+    },
+
+    redirect() {
+      return `${process.env.NEXTAUTHOKREDIRECT}`;
     },
   },
 };

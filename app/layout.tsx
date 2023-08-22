@@ -1,3 +1,4 @@
+import Providers from '@/components/Providers';
 import { Toaster } from '@/components/ui/toaster';
 import './globals.css';
 import type { Metadata } from 'next';
@@ -19,15 +20,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="h-full bg-white">
-      <body className={`${inter.className} h-full`}>
-        <Image objectFit="cover" className="fixed h-full" src={mainBg} alt="" />
-        <div className="flex justify-center">
-          <div className=" relative inset-0 z-0 flex w-full justify-between h-auto border-none  bg-gray-700 bg-opacity-20 bg-clip-padding py-12 backdrop-blur-lg backdrop-filter md:w-[90%] min-h-screen  lg:pt-0 lg:backdrop-blur-2xl">
-            {children}
+      <body className={`${inter.className} h-full px-0 mx-0`}>
+        <Providers>
+          <Image
+            objectFit="cover"
+            className="fixed h-full"
+            src={mainBg}
+            alt=""
+          />
+          <div className="flex justify-center">
+            <div className=" relative inset-0 z-0 flex w-full justify-between h-auto border-none  bg-gray-700 bg-opacity-20 bg-clip-padding py-12 backdrop-blur-lg backdrop-filter md:w-[90%] min-h-screen  lg:pt-0 lg:backdrop-blur-2xl">
+              {children}
+            </div>
           </div>
-        </div>
 
-        <Toaster />
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );
