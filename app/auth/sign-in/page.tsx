@@ -21,7 +21,7 @@ const SignIn = () => {
             alt="Link image"
           />
           <p className="w-full px-2 py-2 text-2xl text-white rounded-md md:text-md lg:px-14 lg:text-3xl">
-            Welcome to your Virtual ancestral home, a place where you can be
+            Welcome to your Virtual ancestral home, A place where you can be
             present & grow together
           </p>
         </div>
