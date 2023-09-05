@@ -47,7 +47,7 @@ const UserSignInAuthForm: FC<UserAuthFormProps> = ({ className, ...props }) => {
 
       toast({
         title: 'Error',
-        description: 'There was an error logging in with credentials',
+        description: 'There was an error logging in with credentials!',
         variant: 'destructive',
       });
     } finally {
